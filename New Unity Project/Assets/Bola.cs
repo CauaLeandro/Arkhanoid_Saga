@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Bola : MonoBehaviour
 {
@@ -20,8 +21,7 @@ void Update()
     {
         if (transform.position.y < minY)
         {
-            transform.position = Vector3.zero;
-            rb.velocity = Vector3.zero;
+            SceneManager.LoadScene("Menumorte");
         }
         if (rb.velocity.magnitude > maxVelocity)
         {
