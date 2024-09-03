@@ -16,7 +16,7 @@ public class Menu : MonoBehaviour
     }
     public void Joga()
     {
-        SceneManager.LoadScene("Play");
+        SceneManager.LoadScene("SampleScene");
     }
 
     public void AbriOpçoes()
